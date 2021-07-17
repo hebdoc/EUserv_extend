@@ -44,7 +44,7 @@ def login(username: str, password: str) -> (str, requests.session):
     session = requests.Session()
 
     sess = session.get(url, headers=headers)
-    sess_id = re.findall("PHPSESSID=(\\w{10,100});", str(sess.headers))[0]
+    sess_id = os.findall("PHPSESSID=(\\w{10,100});", str(sess.headers))[0]
     # 访问png
     png_url = "https://support.euserv.com/pic/logo_small.png"
     session.get(png_url, headers=headers)
