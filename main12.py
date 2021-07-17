@@ -1,4 +1,4 @@
-import re
+import os
 import json
 import time
 import requests
@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 # 多个账户请使用空格隔开
 USERNAME = os.environ["USERNAME"] # 用户名或邮箱
 PASSWORD = os.environ["PASSWORD"]  # 密码
+
 
 # Telegram Bot Push https://core.telegram.org/bots/api#authorizing-your-bot
 TG_BOT_TOKEN = ''  # 通过 @BotFather 申请获得，示例：1077xxx4424:AAFjv0FcqxxxxxxgEMGfi22B4yh15R5uw
