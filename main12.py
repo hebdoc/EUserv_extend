@@ -205,8 +205,8 @@ if __name__ == "__main__":
         check(sessid, s)
         time.sleep(5)
 
-   # TG_BOT_TOKEN and TG_USER_ID and TG_API_HOST and telegram()
-  #  SCKEY and server_chan()
-  #  SRE24_TOKEN and sre24()
+    TG_BOT_TOKEN and TG_USER_ID and TG_API_HOST and telegram()
+    SCKEY and server_chan()
+    SRE24_TOKEN and sre24()
 
     print('*' * 30)
